@@ -16,6 +16,12 @@ namespace Recruit
             );
 
             routes.MapRoute(
+                name: "Jobs Search",
+                url: "jobs/search",
+                defaults: new { controller = "Job", action = "Search" }
+            );
+
+            routes.MapRoute(
                 name: "Employer",
                 url: "employer",
                 defaults: new { controller = "Employer", action = "Index"}
